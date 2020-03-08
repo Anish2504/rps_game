@@ -1,8 +1,8 @@
 import Chance from 'chance';
 
-let computerWins = "Better luck next time."
-let tie = "It's a tie. Try again!"
-let playerWins = "Congratulations, you win!"
+let computerWins = "You lost,better luck next time."
+let tie = "It's a tie. !"
+let playerWins = "BullzEye, you win!"
 
 const computerSelection = () => {
 	let chance = new Chance()

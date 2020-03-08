@@ -10,9 +10,6 @@ class App extends Component {
 		player: '',
 		computer: '',
     results: '',
-    playerTally: 0,
-    computerTally: 0,
-    tally: null,
     showMessage: false
   }
   
@@ -26,22 +23,22 @@ class App extends Component {
     return (
       <div className="App" id="app">
         <h2>Play Rock Paper Scissors</h2>
-        <h3>Select your choice from the options below:</h3>
+        <h3>Select your weapons of choice from below:</h3>
         <div id="playoptions">
           <div id="rockcontainer">
             <h3 id="rock">Rock</h3>
             <img src={rock} id="rockimg"/>
-            <button id="rockbutton" onClick={event => this.handleButtonClick(event)} name="rock">Play w/ Rock</button>
+            <button id="rockbutton" onClick={event => this.handleButtonClick(event)} name="rock">Pick Rock</button>
           </div>
           <div id="papercontainer">
             <h3 id="paper">Paper</h3>
             <img src={paper} id="paperimg"/>
-            <button id="paperbutton" onClick={event => this.handleButtonClick(event)} name="paper">Play w/ Paper</button>
+            <button id="paperbutton" onClick={event => this.handleButtonClick(event)} name="paper">Pick Paper</button>
           </div>
           <div id="scissorscontainer">
             <h3 id="scissors">Scissors</h3>
             <img src={scissors} id="scissorsimg"/>
-            <button id="scissorbutton" onClick={event => this.handleButtonClick(event)} name="scissors">Play w/ Scissors</button>
+            <button id="scissorbutton" onClick={event => this.handleButtonClick(event)} name="scissors">Pick Scissors</button>
           </div>
         </div>
         {this.state.showMessage &&
@@ -54,6 +51,7 @@ class App extends Component {
         </>
         }
       </div>
+      
     );
   }
 }
