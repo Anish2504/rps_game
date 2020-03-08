@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Rock",
+      "image": "./data/images/rock.png",
+      "button": "Play with Rock"
+    },
+    {
+      "id": 2,
+      "name": "Paper",
+      "image": "./data/images/paper.png",
+      "button": "Play with Paper"
+    },
+    {
+      "id": 3,
+      "name": "Scissors",
+      "image": "./data/images/scissors.png",
+      "button": "Play with Scissors"
+    }
+  ]
